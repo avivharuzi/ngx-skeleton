@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-skeleton": [
+        "dist/ngx-skeleton"
+      ],
+      "ngx-skeleton/*": [
+        "dist/ngx-skeleton/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
