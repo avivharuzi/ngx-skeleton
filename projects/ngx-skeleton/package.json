@@ -1,8 +1,28 @@
 {
   "name": "ngx-skeleton",
   "version": "1.0.0",
+  "description": "A placeholder preview component before the content is loaded",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avivharuzi/ngx-skeleton.git"
+  },
+  "keywords": [
+    "angular",
+    "library",
+    "skeleton",
+    "preview",
+    "component",
+    "content",
+    "loading"
+  ],
+  "author": "Aviv Haruzi <avivharuzi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avivharuzi/ngx-skeleton/issues"
+  },
+  "homepage": "https://github.com/avivharuzi/ngx-skeleton#readme"
 }
