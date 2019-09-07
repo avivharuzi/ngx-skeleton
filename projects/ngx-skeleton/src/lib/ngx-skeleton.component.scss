@@ -1,0 +1,34 @@
+@import './scss/variables';
+
+@keyframes ngx-skeleton-animation {
+  0% {
+    opacity: $start-opacity;
+  }
+
+  50% {
+    opacity: $middle-opacity;
+  }
+
+  100% {
+    opacity: $end-opacity;
+  }
+}
+
+.ngx-skeleton {
+  background-color: $default-background-color;
+  height: $default-height;
+  width: $default-width;
+}
+
+.ngx-skeleton-circle {
+  border-radius: $default-circle-border-radius;
+}
+
+.ngx-skeleton-text {
+  border-radius: $default-text-border-radius;
+  margin: $default-text-margin;
+}
+
+.ngx-skeleton-animate {
+  animation: ngx-skeleton-animation $default-animation-time ease-in-out infinite;
+}
