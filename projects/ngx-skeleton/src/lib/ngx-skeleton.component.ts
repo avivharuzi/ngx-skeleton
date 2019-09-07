@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-skeleton-ngx-skeleton',
-  template: `
-    <p>
-      ngx-skeleton works!
-    </p>
-  `,
-  styles: []
+  selector: 'ngx-skeleton',
+  templateUrl: './ngx-skeleton.component.html',
+  styleUrls: ['./ngx-skeleton.component.scss']
 })
 export class NgxSkeletonComponent { }
