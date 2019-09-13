@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+import { defaults } from './shared/defaults';
 import { Variant } from './shared/variant.enum';
 
 @Component({
@@ -10,41 +11,32 @@ import { Variant } from './shared/variant.enum';
 export class NgxSkeletonComponent {
   @Input() animate: boolean;
   @Input() backgroundColor: string;
+  @Input() borderRadius: number | string;
   @Input() height: number | string;
+  @Input() margin: number | string;
   @Input() variant: Variant;
   @Input() width: number | string;
 
   constructor() {
-    this.animate = true;
-    this.variant = Variant.Text;
+    this.animate = defaults.animate;
+    this.backgroundColor = defaults.backgroundColor;
+    this.borderRadius = defaults.borderRadius;
+    this.height = defaults.height;
+    this.margin = defaults.margin;
+    this.variant = defaults.variant;
+    this.width = defaults.width;
   }
 
-  getClasses(): string {
-    return `ngx-skeleton ${this.getVariantClass()} ${this.getAnimateClass()}`;
+  getBorderRadius(): number | string {
+    return this.variant === Variant.Circle && this.borderRadius === defaults.borderRadius ? '50%' : this.borderRadius;
   }
 
-  getVariantClass(): string {
-    switch (this.variant) {
-      case Variant.Text:
-        return 'ngx-skeleton-text';
-      case Variant.Circle:
-        return 'ngx-skeleton-circle';
-      case Variant.Rect:
-      default:
-        return '';
-    }
-  }
-
-  getAnimateClass(): string {
-    return this.animate ? 'ngx-skeleton-animate' : '';
-  }
-
-  getHeight() {
+  getHeight(): number | string {
     const height = +this.height;
     return isNaN(height) ? this.height : `${this.height}px`;
   }
 
-  getWidth() {
+  getWidth(): number | string {
     const width = +this.width;
     return isNaN(width) ? this.width : `${this.width}px`;
   }

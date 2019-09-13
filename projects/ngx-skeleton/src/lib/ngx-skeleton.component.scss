@@ -14,21 +14,6 @@
   }
 }
 
-.ngx-skeleton {
-  background-color: $default-background-color;
-  height: $default-height;
-  width: $default-width;
-}
-
-.ngx-skeleton-circle {
-  border-radius: $default-circle-border-radius;
-}
-
-.ngx-skeleton-text {
-  border-radius: $default-text-border-radius;
-  margin: $default-text-margin;
-}
-
 .ngx-skeleton-animate {
   animation: ngx-skeleton-animation $default-animation-time ease-in-out infinite;
 }
