@@ -1,7 +1,7 @@
 {
   "name": "ngx-skeleton",
   "version": "1.0.0",
-  "description": "A placeholder preview component before the content is loaded",
+  "description": "Angular placeholder preview component before the content is loaded",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4"
