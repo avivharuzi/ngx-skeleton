@@ -1,0 +1,12 @@
+<div class="row">
+  <ng-container *ngIf="movies && movies.length; else loadingMovies">
+    <div class="col-md-3" *ngFor="let movie of movies">
+      <app-movie-item [movie]="movie"></app-movie-item>
+    </div>
+  </ng-container>
+  <ng-template #loadingMovies>
+    <div class="col-md-3" *ngFor="let i of [].constructor(4)">
+      <app-movie-item [isLoading]="true"></app-movie-item>
+    </div>
+  </ng-template>
+</div>
