@@ -1,10 +1,10 @@
 {
   "name": "ngx-skeleton",
-  "version": "1.0.0",
+  "version": "11.0.0",
   "description": "Angular placeholder preview component before the content is loaded",
   "peerDependencies": {
-    "@angular/common": "^8.2.4",
-    "@angular/core": "^8.2.4"
+    "@angular/common": "11.x",
+    "@angular/core": "11.x"
   },
   "repository": {
     "type": "git",

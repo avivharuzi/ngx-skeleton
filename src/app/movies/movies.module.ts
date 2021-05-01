@@ -9,6 +9,7 @@ import { MovieItemComponent } from './components/movie-list/movie-item/movie-ite
 @NgModule({
   declarations: [MovieListComponent, MovieItemComponent],
   imports: [CommonModule, NgxSkeletonModule],
-  exports: [MovieListComponent]
+  exports: [MovieListComponent],
 })
-export class MoviesModule { }
+export class MoviesModule {
+}

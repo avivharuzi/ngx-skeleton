@@ -134,13 +134,13 @@
           "options": {
             "tsConfig": "projects/ngx-skeleton/tsconfig.lib.json",
             "project": "projects/ngx-skeleton/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ngx-skeleton/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -162,6 +162,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ngx-skeleton-app"
 }

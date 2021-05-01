@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NgxSkeletonComponent } from './ngx-skeleton.component';
 
@@ -6,11 +6,11 @@ describe('NgxSkeletonComponent', () => {
   let component: NgxSkeletonComponent;
   let fixture: ComponentFixture<NgxSkeletonComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxSkeletonComponent ]
+      declarations: [NgxSkeletonComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

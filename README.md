@@ -9,6 +9,15 @@ Angular placeholder preview component before the content is loaded.
 * Angular 6+
 * Server-side Rendering
 
+## Compatibility
+
+Versions compatibility list:
+
+| ngx-skeleton | Angular       |
+| ------------ | ------------- |
+| 11.x.x       | 11.x.x        |
+| 1.x.x        | 6.xx - 10.x.x |
+
 ## Installation
 
 ```sh

@@ -6,7 +6,7 @@ import { Variant } from './shared/variant.enum';
 @Component({
   selector: 'ngx-skeleton',
   templateUrl: './ngx-skeleton.component.html',
-  styleUrls: ['./ngx-skeleton.component.scss']
+  styleUrls: ['./ngx-skeleton.component.scss'],
 })
 export class NgxSkeletonComponent {
   @Input() animate: boolean;

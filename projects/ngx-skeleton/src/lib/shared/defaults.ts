@@ -7,5 +7,5 @@ export const defaults = {
   height: '100%',
   margin: 0,
   variant: Variant.Rect,
-  width: '100%'
+  width: '100%',
 };

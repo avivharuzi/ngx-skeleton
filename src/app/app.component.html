@@ -1,6 +1,5 @@
 <div class="container mt-5">
   <app-movie-list [movies]="movies"></app-movie-list>
-
   <div class="mt-5 text-center">
     <button class="btn btn-primary mr-3 ml-3" [disabled]="!movies || !movies.length" (click)="simulate()">Simulate again</button>
     <button class="btn btn-warning mr-3 ml-3" [disabled]="!movies || !movies.length" (click)="startLoading()">Start loading</button>
