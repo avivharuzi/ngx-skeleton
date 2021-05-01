@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:lib": "ng build ngx-skeleton --watch",
-    "build:lib": "ng build ngx-skeleton",
+    "build:lib": "ng build ngx-skeleton --prod",
     "test:lib": "ng test ngx-skeleton",
     "lint:lib": "ng lint ngx-skeleton",
     "copy:lib": "cp README.md dist/ngx-skeleton && cp LICENSE dist/ngx-skeleton",
