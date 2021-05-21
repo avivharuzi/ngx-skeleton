@@ -6,8 +6,8 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": [
-          "projects/ngx-skeleton/tsconfig.lib.json",
-          "projects/ngx-skeleton/tsconfig.spec.json"
+          "./tsconfig.lib.json",
+          "./tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },
