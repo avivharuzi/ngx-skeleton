@@ -8,19 +8,19 @@
     "build:dev": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test::without-watch": "ng test --watch false",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "format": "prettier --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "format:staged": "pretty-quick --staged --pattern \"**/*.{ts,js,css,scss,html,json,md}\"",
-    "start:lib": "ng build ngx-skeleton --watch",
+    "watch:lib": "ng build ngx-skeleton --watch --configuration development",
     "build:lib": "ng build ngx-skeleton",
     "build:lib:dev": "ng build ngx-skeleton --configuration development",
     "test:lib": "ng test ngx-skeleton",
     "test:lib:without-watch": "ng test ngx-skeleton --watch false",
-    "lint:lib": "ng lint ngx-skeleton",
     "copy:lib": "cp README.md dist/ngx-skeleton && cp LICENSE dist/ngx-skeleton",
-    "publish:lib": "npm run lint:lib && npm run test:lib:without-watch && npm run build:lib && npm run copy:lib && cd dist/ngx-skeleton && npm publish --access public",
-    "publish:app": "npm run build:lib && npm run build && angular-cli-ghpages --dir=dist/ngx-skeleton-app"
+    "publish:lib": "npm run lint && npm run test:lib:without-watch && npm run build:lib && npm run copy:lib && cd dist/ngx-skeleton && npm publish --access public",
+    "publish:app": "npm run lint && npm run test:without-watch && npm run build:lib && npm run build && angular-cli-ghpages --dir=dist/ngx-skeleton-app"
   },
   "private": true,
   "dependencies": {
