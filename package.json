@@ -8,7 +8,7 @@
     "build:dev": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test::without-watch": "ng test --watch false",
+    "test:without-watch": "ng test --watch false",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "format": "prettier --write \"**/*.{ts,js,css,scss,html,json,md}\"",
