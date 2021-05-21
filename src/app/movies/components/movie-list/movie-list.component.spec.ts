@@ -6,12 +6,13 @@ describe('MovieListComponent', () => {
   let component: MovieListComponent;
   let fixture: ComponentFixture<MovieListComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [MovieListComponent],
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [MovieListComponent],
+      }).compileComponents();
     })
-      .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MovieListComponent);

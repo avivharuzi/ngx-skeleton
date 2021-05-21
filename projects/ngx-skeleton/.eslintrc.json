@@ -1,0 +1,38 @@
+{
+  "extends": "../../.eslintrc.json",
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": [
+          "projects/ngx-skeleton/tsconfig.lib.json",
+          "projects/ngx-skeleton/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "ngx-skeleton",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "ngx-skeleton",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "rules": {}
+    }
+  ]
+}

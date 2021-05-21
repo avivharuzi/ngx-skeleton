@@ -1,18 +1,31 @@
 <ng-container *ngIf="movie || (!movie && isLoading)">
   <div class="shadow-lg rounded">
     <ng-container *ngIf="!isLoading; else loadingImage">
-      <img class="rounded-top" width="100%" height="375px" [src]="movie.image">
+      <img
+        class="rounded-top"
+        width="100%"
+        height="375px"
+        [alt]="movie?.title"
+        [src]="movie?.image"
+      />
     </ng-container>
     <ng-template #loadingImage>
-      <ngx-skeleton height="375px" borderRadius="0.25rem 0.25rem 0 0"></ngx-skeleton>
+      <ngx-skeleton
+        height="375px"
+        borderRadius="0.25rem 0.25rem 0 0"
+      ></ngx-skeleton>
     </ng-template>
     <div class="p-3">
       <ng-container *ngIf="!isLoading; else loadingContent">
-        <h5>{{ movie.title }}</h5>
-        <h6 class="text-black-50">{{ movie.date }}</h6>
+        <h5>{{ movie?.title }}</h5>
+        <h6 class="text-black-50">{{ movie?.date }}</h6>
       </ng-container>
       <ng-template #loadingContent>
-        <ngx-skeleton height="24px" margin="0 0 8px 0" width="50%"></ngx-skeleton>
+        <ngx-skeleton
+          height="24px"
+          margin="0 0 8px 0"
+          width="50%"
+        ></ngx-skeleton>
         <ngx-skeleton height="19px" margin="0 0 8px 0"></ngx-skeleton>
       </ng-template>
     </div>

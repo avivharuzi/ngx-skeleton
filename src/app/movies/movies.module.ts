@@ -11,5 +11,4 @@ import { MovieItemComponent } from './components/movie-list/movie-item/movie-ite
   imports: [CommonModule, NgxSkeletonModule],
   exports: [MovieListComponent],
 })
-export class MoviesModule {
-}
+export class MoviesModule {}

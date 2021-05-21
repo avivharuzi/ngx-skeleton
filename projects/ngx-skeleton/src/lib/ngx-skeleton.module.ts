@@ -6,5 +6,4 @@ import { NgxSkeletonComponent } from './ngx-skeleton.component';
   declarations: [NgxSkeletonComponent],
   exports: [NgxSkeletonComponent],
 })
-export class NgxSkeletonModule {
-}
+export class NgxSkeletonModule {}

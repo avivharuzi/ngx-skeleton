@@ -9,4 +9,8 @@ import { Movie } from '../../shared/movie.model';
 })
 export class MovieListComponent {
   @Input() movies: Movie[];
+
+  constructor() {
+    this.movies = [];
+  }
 }

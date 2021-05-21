@@ -8,7 +8,7 @@ import { Movie } from '../../../shared/movie.model';
   styleUrls: ['./movie-item.component.scss'],
 })
 export class MovieItemComponent {
-  @Input() movie: Movie;
+  @Input() movie?: Movie;
   @Input() isLoading: boolean;
 
   constructor() {

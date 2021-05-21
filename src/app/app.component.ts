@@ -11,6 +11,10 @@ import { MOVIES } from './movies/shared/movie.mock';
 export class AppComponent implements OnInit {
   movies: Movie[];
 
+  constructor() {
+    this.movies = [];
+  }
+
   ngOnInit(): void {
     this.simulate();
   }
@@ -18,7 +22,7 @@ export class AppComponent implements OnInit {
   simulate(): void {
     this.movies = [];
 
-    setTimeout(() => this.movies = MOVIES, 4000);
+    setTimeout(() => (this.movies = MOVIES), 4000);
   }
 
   startLoading(): void {

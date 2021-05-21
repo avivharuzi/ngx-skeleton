@@ -28,7 +28,10 @@ export class NgxSkeletonComponent {
   }
 
   getBorderRadius(): number | string {
-    return this.variant === Variant.Circle && this.borderRadius === defaults.borderRadius ? '50%' : this.borderRadius;
+    return this.variant === Variant.Circle &&
+      this.borderRadius === defaults.borderRadius
+      ? '50%'
+      : this.borderRadius;
   }
 
   getHeight(): number | string {

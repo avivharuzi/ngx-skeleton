@@ -6,8 +6,8 @@ Angular placeholder preview component before the content is loaded.
 
 ## Environment Support
 
-* Angular 6+
-* Server-side Rendering
+- Angular 6+
+- Server-side Rendering
 
 ## Compatibility
 
@@ -15,6 +15,7 @@ Versions compatibility list:
 
 | ngx-skeleton | Angular       |
 | ------------ | ------------- |
+| 12.x.x       | 12.x.x        |
 | 11.x.x       | 11.x.x        |
 | 1.x.x        | 6.xx - 10.x.x |
 
@@ -51,12 +52,12 @@ Use in your components (this is code example from demo page):
 
 ```html
 <ng-container *ngIf="!isLoading; else loadingContent">
-    <h5>{{ movie.title }}</h5>
-    <h6 class="text-black-50">{{ movie.date }}</h6>
+  <h5>{{ movie.title }}</h5>
+  <h6 class="text-black-50">{{ movie.date }}</h6>
 </ng-container>
 <ng-template #loadingContent>
-    <ngx-skeleton height="24px" margin="0 0 8px 0" width="50%"></ngx-skeleton>
-    <ngx-skeleton height="19px" margin="0 0 8px 0"></ngx-skeleton>
+  <ngx-skeleton height="24px" margin="0 0 8px 0" width="50%"></ngx-skeleton>
+  <ngx-skeleton height="19px" margin="0 0 8px 0"></ngx-skeleton>
 </ng-template>
 ```
 

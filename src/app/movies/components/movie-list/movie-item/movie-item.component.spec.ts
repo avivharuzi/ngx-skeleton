@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MovieItemComponent } from './movie-item.component';
 
@@ -6,12 +6,13 @@ describe('MovieItemComponent', () => {
   let component: MovieItemComponent;
   let fixture: ComponentFixture<MovieItemComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [MovieItemComponent],
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [MovieItemComponent],
+      }).compileComponents();
     })
-      .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MovieItemComponent);
