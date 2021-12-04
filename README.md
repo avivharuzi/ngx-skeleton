@@ -15,6 +15,7 @@ Versions compatibility list:
 
 | ngx-skeleton | Angular       |
 | ------------ | ------------- |
+| 13.x.x       | 13.x.x        |
 | 12.x.x       | 12.x.x        |
 | 11.x.x       | 11.x.x        |
 | 1.x.x        | 6.xx - 10.x.x |
@@ -67,13 +68,13 @@ Use in your components (this is code example from demo page):
 
 | Input             | Type                   | Default                 |
 | ----------------- | ---------------------- | ----------------------- |
-| `animate`         | Boolean                | `true`                  |
-| `backgroundColor` | String                 | `'rgba(0, 0, 0, 0.08)'` |
-| `borderRadius`    | Number or String       | `0`                     |
-| `height`          | Number or String       | `'100%'`                |
-| `margin`          | Number or String       | `0`                     |
+| `animate`         | boolean                | `true`                  |
+| `backgroundColor` | string                 | `'rgba(0, 0, 0, 0.08)'` |
+| `borderRadius`    | number &#124; string   | `0`                     |
+| `height`          | number &#124; string   | `'100%'`                |
+| `margin`          | number &#124; string   | `0`                     |
 | `variant`         | `'rect'` or `'circle'` | `'rect'`                |
-| `width`           | Number or String       | `'100%'`                |
+| `width`           | number &#124; string   | `'100%'`                |
 
 # License
 

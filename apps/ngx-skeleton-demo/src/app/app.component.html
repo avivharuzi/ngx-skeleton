@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <app-movie-list [movies]="(movies$ | async) || []"></app-movie-list>
+  <div class="mt-5 text-center">
+    <button
+      class="btn btn-primary mx-3"
+      [disabled]="!(movies$ | async) || !(movies$ | async)?.length"
+      (click)="simulate()"
+    >
+      Simulate again
+    </button>
+    <button
+      class="btn btn-warning mx-3"
+      [disabled]="!(movies$ | async) || !(movies$ | async)?.length"
+      (click)="startLoading()"
+    >
+      Start loading
+    </button>
+    <button
+      class="btn btn-warning mx-3"
+      [disabled]="(movies$ | async) && (movies$ | async)?.length"
+      (click)="stopLoading()"
+    >
+      Stop loading
+    </button>
+  </div>
+</div>

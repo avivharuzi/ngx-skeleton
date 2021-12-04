@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "packages/ngx-skeleton",
+  "sourceRoot": "packages/ngx-skeleton/src",
+  "prefix": "ngx-skeleton",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/packages/ngx-skeleton"],
+      "options": {
+        "project": "packages/ngx-skeleton/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/ngx-skeleton/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/ngx-skeleton/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ngx-skeleton"],
+      "options": {
+        "jestConfig": "packages/ngx-skeleton/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/ngx-skeleton/src/**/*.ts",
+          "packages/ngx-skeleton/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

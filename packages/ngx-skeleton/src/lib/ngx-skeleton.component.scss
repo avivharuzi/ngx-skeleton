@@ -1,0 +1,22 @@
+$start-opacity: 1;
+$middle-opacity: 0.4;
+$end-opacity: 1;
+$default-animation-time: 1.5s;
+
+@keyframes ngx-skeleton-animation {
+  0% {
+    opacity: $start-opacity;
+  }
+
+  50% {
+    opacity: $middle-opacity;
+  }
+
+  100% {
+    opacity: $end-opacity;
+  }
+}
+
+.ngx-skeleton-animate {
+  animation: ngx-skeleton-animation $default-animation-time ease-in-out infinite;
+}

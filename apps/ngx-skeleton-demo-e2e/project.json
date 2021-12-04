@@ -1,0 +1,28 @@
+{
+  "root": "apps/ngx-skeleton-demo-e2e",
+  "sourceRoot": "apps/ngx-skeleton-demo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ngx-skeleton-demo-e2e/cypress.json",
+        "devServerTarget": "ngx-skeleton-demo:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ngx-skeleton-demo:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ngx-skeleton-demo-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ngx-skeleton-demo"]
+}
