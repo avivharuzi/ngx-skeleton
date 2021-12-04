@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Movie } from '../../../shared/movie';
 
 @Component({
-  selector: 'app-movie-item',
+  selector: 'ngx-skeleton-demo-movie-item',
   templateUrl: './movie-item.component.html',
   styleUrls: ['./movie-item.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
