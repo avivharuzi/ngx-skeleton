@@ -8,6 +8,6 @@ describe('ngx-skeleton-demo', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to ngx-skeleton-demo!');
+    getGreeting().contains('Welcome ngx-skeleton-demo');
   });
 });

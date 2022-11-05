@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "packages/ngx-skeleton",
   "sourceRoot": "packages/ngx-skeleton/src",
   "prefix": "ngx-skeleton",
   "targets": {
@@ -24,7 +23,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/packages/ngx-skeleton"],
       "options": {
-        "jestConfig": "packages/ngx-skeleton/jest.config.js",
+        "jestConfig": "packages/ngx-skeleton/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -32,8 +31,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/ngx-skeleton/src/**/*.ts",
-          "packages/ngx-skeleton/src/**/*.html"
+          "packages/ngx-skeleton/**/*.ts",
+          "packages/ngx-skeleton/**/*.html"
         ]
       }
     }
