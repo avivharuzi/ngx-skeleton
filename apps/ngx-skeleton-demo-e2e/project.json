@@ -1,6 +1,6 @@
 {
-  "root": "apps/ngx-skeleton-demo-e2e",
-  "sourceRoot": "apps/ngx-skeleton-demo-e2e/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "/src",
   "projectType": "application",
   "targets": {
     "e2e": {

@@ -14,7 +14,8 @@ Angular placeholder preview component before the content is loaded.
 Versions compatibility list:
 
 | ngx-skeleton | Angular       |
-| ------------ | ------------- |
+|--------------|---------------|
+| 14.x.x       | 14.x.x        |
 | 13.x.x       | 13.x.x        |
 | 12.x.x       | 12.x.x        |
 | 11.x.x       | 11.x.x        |
