@@ -83,3 +83,30 @@ jobs:
           for path in ./dist/packages/*; do
             cd "$path" && npm version "${{ steps.storePackageVersion.outputs.nextPackageVersion }}" --no-git-tag-version --allow-same-version && npm publish --access public && cd -
           done
+
+  deploy-demo:
+    name: Deploy Demo
+    needs: pre-release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm i
+      - name: Build Demo
+        run: npm run build:ngx-skeleton-demo
+      - run: cd dist/apps/ngx-skeleton-demo && cp index.html 404.html && cd -
+      - uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/apps/ngx-skeleton-demo
