@@ -6,13 +6,11 @@ describe('NgxSkeletonComponent', () => {
   let component: NgxSkeletonComponent;
   let fixture: ComponentFixture<NgxSkeletonComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [NgxSkeletonComponent],
-      }).compileComponents();
-    })
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [NgxSkeletonComponent],
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(NgxSkeletonComponent);

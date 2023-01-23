@@ -14,7 +14,8 @@ Angular placeholder preview component before the content is loaded.
 Versions compatibility list:
 
 | ngx-skeleton | Angular       |
-|--------------|---------------|
+| ------------ | ------------- |
+| 15.x.x       | 15.x.x        |
 | 14.x.x       | 14.x.x        |
 | 13.x.x       | 13.x.x        |
 | 12.x.x       | 12.x.x        |
@@ -48,6 +49,19 @@ imports: [
   // ...
   NgxSkeletonModule,
 ],
+```
+
+You can also import `NgxSkeletonComponent` as standalone component:
+
+```ts
+import { NgxSkeletonComponent } from 'ngx-skeleton';
+
+@Component({
+  standalone: true,
+  imports: [NgxSkeletonComponent],
+  // ...
+})
+export class MyComponent {}
 ```
 
 Use in your components (this is code example from demo page):

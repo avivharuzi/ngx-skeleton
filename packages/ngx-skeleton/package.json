@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Angular placeholder preview component before the content is loaded",
   "peerDependencies": {
-    "@angular/common": "14.x",
-    "@angular/core": "14.x"
+    "@angular/common": ">=15.x",
+    "@angular/core": ">=15.x"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,6 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "sideEffects": false,
   "homepage": "https://github.com/avivharuzi/ngx-skeleton#readme"
 }
