@@ -4,6 +4,7 @@ import { ngxSkeletonDefaults } from './ngx-skeleton-defaults';
 import { NgxSkeletonVariant } from './ngx-skeleton-variant';
 
 @Component({
+  standalone: true,
   selector: 'ngx-skeleton',
   templateUrl: './ngx-skeleton.component.html',
   styleUrls: ['./ngx-skeleton.component.scss'],

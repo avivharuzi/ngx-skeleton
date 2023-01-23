@@ -1,9 +1,0 @@
-{
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "ngx-skeleton": "packages/ngx-skeleton",
-    "ngx-skeleton-demo": "apps/ngx-skeleton-demo",
-    "ngx-skeleton-demo-e2e": "apps/ngx-skeleton-demo-e2e"
-  }
-}
