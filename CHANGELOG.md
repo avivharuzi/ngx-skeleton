@@ -1,3 +1,21 @@
+# [16.0.0](https://github.com/avivharuzi/ngx-skeleton/compare/15.0.0...16.0.0) (2023-09-23)
+
+### Bug Fixes
+
+- 🐛 add .eslintignore ([0144aea](https://github.com/avivharuzi/ngx-skeleton/commit/0144aea1da83decc4a06940eb08d7a29e78e0410))
+- 🐛 lint ([a9f2604](https://github.com/avivharuzi/ngx-skeleton/commit/a9f260432dc442c622d0c1f0f20c573a5b1fe8ac))
+- 🐛 readme ([f25061d](https://github.com/avivharuzi/ngx-skeleton/commit/f25061d66419b0f26b437cf330776070f2229ef7))
+- 🐛 readme ([a926db6](https://github.com/avivharuzi/ngx-skeleton/commit/a926db6f07cbd7216411011c292cb44ef3663109))
+- 🐛 readme ([b673dae](https://github.com/avivharuzi/ngx-skeleton/commit/b673dae987b1c08b986c6bbca402fbf7112f5e0b))
+
+### chore
+
+- 🤖 update to angular 16 ([be7962f](https://github.com/avivharuzi/ngx-skeleton/commit/be7962f155d1fe8882b63017ff4317a77b3e3bf5))
+
+### BREAKING CHANGES
+
+- 🧨 update to angular 16
+
 # [15.0.0](https://github.com/avivharuzi/ngx-skeleton/compare/14.0.0...15.0.0) (2023-01-23)
 
 ### Bug Fixes
