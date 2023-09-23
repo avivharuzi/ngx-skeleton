@@ -44,7 +44,7 @@ yarn install ngx-skeleton
 Import `NgxSkeletonModule` into the current module's imports:
 
 ```ts
-import { NgxSkeletonModule } from 'ngx-skeleton';
+import {NgxSkeletonModule} from 'ngx-skeleton';
 
 imports: [
   // ...
@@ -55,14 +55,15 @@ imports: [
 You can also import `NgxSkeletonComponent` as standalone component:
 
 ```ts
-import { NgxSkeletonComponent } from 'ngx-skeleton';
+import {NgxSkeletonComponent} from 'ngx-skeleton';
 
 @Component({
   standalone: true,
   imports: [NgxSkeletonComponent],
   // ...
 })
-export class MyComponent {}
+export class MyComponent {
+}
 ```
 
 Use in your components (this is code example from demo page):
