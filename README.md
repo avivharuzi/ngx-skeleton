@@ -44,7 +44,7 @@ yarn install ngx-skeleton
 Import `NgxSkeletonModule` into the current module's imports:
 
 ```ts
-import {NgxSkeletonModule} from 'ngx-skeleton';
+import { NgxSkeletonModule } from 'ngx-skeleton';
 
 imports: [
   // ...
