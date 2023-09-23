@@ -14,7 +14,8 @@ Angular placeholder preview component before the content is loaded.
 Versions compatibility list:
 
 | ngx-skeleton | Angular       |
-| ------------ | ------------- |
+|--------------|---------------|
+| 16.x.x       | 16.x.x        |
 | 15.x.x       | 15.x.x        |
 | 14.x.x       | 14.x.x        |
 | 13.x.x       | 13.x.x        |
@@ -67,6 +68,7 @@ export class MyComponent {}
 Use in your components (this is code example from demo page):
 
 ```html
+
 <ng-container *ngIf="!isLoading; else loadingContent">
   <h5>{{ movie.title }}</h5>
   <h6 class="text-black-50">{{ movie.date }}</h6>
@@ -82,7 +84,7 @@ Use in your components (this is code example from demo page):
 ### Inputs
 
 | Input             | Type                   | Default                 |
-| ----------------- | ---------------------- | ----------------------- |
+|-------------------|------------------------|-------------------------|
 | `animate`         | boolean                | `true`                  |
 | `backgroundColor` | string                 | `'rgba(0, 0, 0, 0.08)'` |
 | `borderRadius`    | number &#124; string   | `0`                     |
